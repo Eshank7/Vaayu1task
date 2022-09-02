@@ -89,4 +89,45 @@ while i<=5:
     i=i+1
 '''
 
+#General code
+#To print a railway ticket
+
+name=input("Name of the passenger is: ")
+cost=0
+time=0
+tname=0
+dest=input("Destination is:")
+nop=int(input("no of passengers are: "))
+
+if dest.upper()=="delhi":
+    tname="Rajdhani Express"
+    time= "16:00"
+    if nop==1:
+        cost=30000
+    else:
+        cost=nop*30000
+
+if dest.upper()=="chennai":
+    tname="Chennai Express"
+    time= "14:00"
+    if nop==1:
+        cost=12000
+    else:
+        cost=nop*12000
+
+if dest.upper()=="ahemdabad":
+    tname="Karnavati Express"
+    time= "4:00"
+    if nop==1:
+        cost=9000
+    else:
+        cost=nop*9000
+
+print("Your Ticket:")
+print("Name of Passenger:"+name)
+print ("Destination: "+dest)
+print("Name of Train: "+str(tname))
+print("Time of departure: "+str(time))
+print("No of Passengers: "+str(nop))
+print("Cost: "+str(cost))
 
